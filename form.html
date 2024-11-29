@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Fitness Gym</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Sign Up for Membership</h1>
+        <form id="membership-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="timing">Preferred Timing Shift:</label>
+            <select id="timing" name="timing" required>
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Success message container -->
+        <div id="success-message" style="display: none; color: green; margin-top: 20px;">
+            Submitted Successfully!
+        </div>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
